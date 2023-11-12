@@ -130,12 +130,14 @@ a{
         width: 50%;
         background-color: $light-grey-color;
         padding-top: 30px;
+        padding-bottom: 2%;
     }
 
     &__about{
         float:right;
         width: 50%;
         background-color: $white-color;
+        padding-bottom: 2%;
         
         &__name{
             font: 100% $font-details;
