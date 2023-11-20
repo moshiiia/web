@@ -262,22 +262,22 @@ a{
 //миксин на длину линии миксин на цвета слайдера размер текста в карточке
 
 .company{
-    margin-bottom: 2%;
+    margin-bottom: 2em;
 
     &__title{
         font:200% $font-details;
         margin-left: 5em;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
 
     &__reviews{
         float:left; 
-        width: 60%;
+        width: 50%;
         &__item{
             display: grid;
             grid: 100%/ 15% 60%;
-            justify-content: center;
+            justify-content: right;
             column-gap: 5%;
             margin-bottom: 5%;
 
@@ -299,12 +299,11 @@ a{
 
     &__about{
         float:right; 
-        width: 40%;
+        width: 50%;
 
         &__wrapper{
-            margin-top: 10%;
-            display: flex;
-            justify-content: center;
+            margin-top: 3em;
+            margin-left: 20%;
         }
 
         &__text{
@@ -313,7 +312,52 @@ a{
             background-color: $primary-color-bg;
             border-radius: $round;
             font: 100% $font-details;
-            width: 40%;
+            width: 50%;
+        }
+
+        &__logo{
+            height: auto;
+            width: 100%;
         }
     }
+}
+
+.footer{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+
+    &__info{
+        font: 100%  $font-main;
+        color: $white-color;
+        line-height: 1.5em;
+        text-shadow: 1px 1px 1px #000;
+    }
+
+    &__media{
+        &__title{
+        font: 100%  $font-main;
+        color: $white-color;
+        text-shadow: 1px 1px 1px #000;
+        }
+
+        &__grid{
+            display: grid;
+            grid: 100%/ 25% 25% 25% 25%;
+            justify-content: center;
+            margin-left: 1em;
+            margin-top: 0.5em;
+
+            &__element{
+                height: 80%;
+                width: auto;
+                cursor: pointer;
+            }
+        }
+        
+    }
+
 }
