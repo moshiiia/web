@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400&family=Roboto+Slab:wght@600&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+a:link, a:visited, a:focus, a:hover {
+  color: white; }
+
+.header {
+  z-index: 100;
+  position: fixed;
+  background-color: #515e42;
+  width: 100vw;
+  height: 36px; }
+  .header__logo {
+    display: inline;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 70%; }
+  .header__button {
+    background: #515e42;
+    margin-right: 5%;
+    padding: 7px;
+    font-size: 22px;
+    color: white;
+    font: 100% "Noto Serif";
+    border: none; }
+    .header__button:hover {
+      background-color: #dee2df;
+      color: #192907;
+      cursor: pointer;
+      border-radius: 2px; }
+
+.palette {
+  display: flex;
+  justify-content: end; }
+
+.banner {
+  background-image: url("../../res/Back.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh; }
+  .banner__text {
+    padding-top: 40vh;
+    font: 100% "Roboto Slab";
+    text-align: center;
+    color: #dee2df;
+    text-align: center;
+    font-size: 10vh;
+    letter-spacing: 5px; }
+
+.slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  cursor: pointer; }
+
+.square {
+  width: 4vh;
+  height: 4vh;
+  border-radius: 9px;
+  background: #515e42;
+  margin-left: 1vh;
+  margin-right: 1vh; }
+
+.line {
+  width: 70%;
+  height: 5px;
+  border-radius: 9px;
+  background: #515e42;
+  margin-left: 50%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  transform: translate(-50%); }
+
+.projects {
+  height: 100vh; }
+  .projects__galery {
+    float: left;
+    height: 100vh;
+    width: 50%;
+    background-color: #dee2df; }
+  .projects__about {
+    height: 100vh;
+    float: right;
+    width: 50%;
+    background-color: white; }
+    .projects__about__name {
+      font: 4vh "Roboto Slab";
+      text-align: center;
+      margin-top: 10vh; }
+    .projects__about__photo {
+      float: left;
+      width: 25%; }
+    .projects__about__text {
+      float: right;
+      width: 70%; }
+  .projects .row-palette {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12vh; }
+    .projects .row-palette__element {
+      height: 22vh;
+      width: auto;
+      border-radius: 9px;
+      margin-bottom: 4vh;
+      margin-left: 50%;
+      transform: translate(-50%); }
+    .projects .row-palette__reviews {
+      height: 15vh;
+      width: auto;
+      border-radius: 9px;
+      margin-left: 4vw;
+      margin-top: 3vh;
+      margin-bottom: 2vh; }
+    .projects .row-palette__text {
+      font: 2vh "Roboto Slab";
+      padding-bottom: 1vh;
+      padding-top: 2vh; }
+      .projects .row-palette__text__data {
+        word-spacing: 20em;
+        font: 2vh "Noto Serif";
+        font-weight: bold; }
+
+.sales {
+  height: 100vh;
+  background-color: #a7a7a7; }
+  .sales__title {
+    font: 6vh "Roboto Slab";
+    text-align: center;
+    padding-top: 8vh; }
+  .sales__cards {
+    display: flex;
+    margin-left: 10%;
+    width: 80%;
+    justify-content: space-around; }
+    .sales__cards__item {
+      background: white;
+      width: 20vw;
+      height: 60vh;
+      border-radius: 9px;
+      display: grid;
+      grid-template-rows: 50% 10% 25% 15%; }
+      .sales__cards__item__img {
+        width: 100%;
+        height: 90%;
+        border-radius: 9px 9px 0 0; }
+      .sales__cards__item__title {
+        font: 4vh "Roboto Slab";
+        text-align: left;
+        margin-left: 5%; }
+      .sales__cards__item__text {
+        font: 2vh "Roboto Slab";
+        text-align: left;
+        margin-left: 5%; }
+      .sales__cards__item__price {
+        background-color: #515e42;
+        height: 100%;
+        width: 100%;
+        border-radius: 0 0 9px 9px; }
+        .sales__cards__item__price__text {
+          font: 4vh "Noto Serif";
+          color: white;
+          text-align: center;
+          margin-top: 5%;
+          cursor: pointer;
+          letter-spacing: 0.05em; }
+
+.mini-banner {
+  background-image: url("../../res/back1.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 20vh;
+  height: 20vh; }
+
+.company {
+  height: 100vh; }
+  .company__title {
+    font: 5vh "Roboto Slab";
+    margin-left: 5em;
+    margin-bottom: 0.5em;
+    margin-top: 2em; }
+  .company__reviews {
+    float: left;
+    width: 50%; }
+    .company__reviews__item {
+      display: grid;
+      grid: 100%/ 20% 60%;
+      justify-content: right;
+      column-gap: 5%;
+      margin-bottom: 5%; }
+      .company__reviews__item__photo {
+        height: 20vh;
+        width: auto; }
+      .company__reviews__item__text {
+        margin-left: 1em;
+        margin-top: 1.2em;
+        font: 2vh "Roboto Slab"; }
+        .company__reviews__item__text__title {
+          font: 120% "Roboto Slab"; }
+  .company__about {
+    float: right;
+    width: 50%; }
+    .company__about__wrapper {
+      margin-top: 15vh;
+      margin-left: 20%; }
+    .company__about__text {
+      padding: 1em;
+      border: solid 3px #515e42;
+      background-color: #dee3df;
+      border-radius: 9px;
+      font: 2vh "Roboto Slab";
+      width: 50%; }
+    .company__about__logo {
+      height: auto;
+      width: 100%; }
+
+.footer {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  height: 15vh;
+  background-color: #515e42;
+  display: flex;
+  justify-content: center;
+  column-gap: 5%; }
+  .footer__info {
+    font: 2vh "Noto Serif";
+    color: white;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 1px #000; }
+  .footer__media__title {
+    font: 3vh "Noto Serif";
+    color: white;
+    text-shadow: 1px 1px 1px #000; }
+  .footer__media__grid {
+    display: grid;
+    grid: 100%/ 25% 25% 25% 25%;
+    justify-content: center;
+    margin-left: 1em;
+    margin-top: 0.5em; }
+    .footer__media__grid__element {
+      height: 9vh;
+      width: auto;
+      cursor: pointer; }
