@@ -39,12 +39,58 @@ a:link, a:visited, a:focus, a:hover {
       cursor: pointer;
       border-radius: 2px; }
 
+.buying-form {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  background-color: white;
+  height: 60vh;
+  width: 30vw;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 10%;
+  border-radius: 9px;
+  border: 3px solid #1e1e1e; }
+  .buying-form__title {
+    font: 3vh "Noto Serif";
+    font-weight: bold;
+    color: #1e1e1e;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 8%; }
+  .buying-form__contacts {
+    font: 3vh "Noto Serif";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10px; }
+  .buying-form__wraper {
+    display: flex;
+    justify-content: center; }
+  .buying-form__button {
+    background: #848484;
+    border-radius: 9px;
+    padding: 2px 3px;
+    color: #1e1e1e;
+    font: 4vh "Noto Serif";
+    border: none;
+    cursor: pointer; }
+
+input[type="text"] {
+  font: 3vh "Noto Serif";
+  height: 5vh;
+  color: #515e42; }
+
+.form-on {
+  display: block; }
+
 .palette {
   display: flex;
   justify-content: end; }
 
 .banner {
   background-image: url("../../res/Back.png");
+  z-index: 1;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   height: 100vh; }
@@ -82,7 +128,8 @@ a:link, a:visited, a:focus, a:hover {
   transform: translate(-50%); }
 
 .projects {
-  height: 100vh; }
+  height: 100vh;
+  z-index: 1; }
   .projects__galery {
     float: left;
     height: 100vh;
@@ -113,14 +160,16 @@ a:link, a:visited, a:focus, a:hover {
       border-radius: 9px;
       margin-bottom: 4vh;
       margin-left: 50%;
-      transform: translate(-50%); }
+      transform: translate(-50%);
+      object-fit: cover; }
     .projects .row-palette__reviews {
       height: 15vh;
       width: auto;
       border-radius: 9px;
       margin-left: 4vw;
       margin-top: 3vh;
-      margin-bottom: 2vh; }
+      margin-bottom: 2vh;
+      object-fit: cover; }
     .projects .row-palette__text {
       font: 2vh "Roboto Slab";
       padding-bottom: 1vh;
@@ -132,6 +181,7 @@ a:link, a:visited, a:focus, a:hover {
 
 .sales {
   height: 100vh;
+  z-index: 1;
   background-color: #a7a7a7; }
   .sales__title {
     font: 6vh "Roboto Slab";
@@ -152,7 +202,8 @@ a:link, a:visited, a:focus, a:hover {
       .sales__cards__item__img {
         width: 100%;
         height: 90%;
-        border-radius: 9px 9px 0 0; }
+        border-radius: 9px 9px 0 0;
+        object-fit: cover; }
       .sales__cards__item__title {
         font: 4vh "Roboto Slab";
         text-align: left;
@@ -175,13 +226,15 @@ a:link, a:visited, a:focus, a:hover {
           letter-spacing: 0.05em; }
 
 .mini-banner {
+  z-index: 1;
   background-image: url("../../res/back1.png");
   background-repeat: no-repeat;
   background-size: 100vw 20vh;
   height: 20vh; }
 
 .company {
-  height: 100vh; }
+  height: 100vh;
+  z-index: 1; }
   .company__title {
     font: 5vh "Roboto Slab";
     margin-left: 5em;
@@ -198,7 +251,8 @@ a:link, a:visited, a:focus, a:hover {
       margin-bottom: 5%; }
       .company__reviews__item__photo {
         height: 20vh;
-        width: auto; }
+        width: auto;
+        object-fit: cover; }
       .company__reviews__item__text {
         margin-left: 1em;
         margin-top: 1.2em;
@@ -220,7 +274,8 @@ a:link, a:visited, a:focus, a:hover {
       width: 50%; }
     .company__about__logo {
       height: auto;
-      width: 100%; }
+      width: 100%;
+      object-fit: cover; }
 
 .footer {
   padding-top: 0.5em;
@@ -229,7 +284,8 @@ a:link, a:visited, a:focus, a:hover {
   background-color: #515e42;
   display: flex;
   justify-content: center;
-  column-gap: 5%; }
+  column-gap: 5%;
+  z-index: 1; }
   .footer__info {
     font: 2vh "Noto Serif";
     color: white;

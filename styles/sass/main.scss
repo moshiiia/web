@@ -64,6 +64,61 @@ a:link, a:visited,a:focus,a:hover {
 
 }
 
+.buying-form{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    background-color: $white-color;
+    height: 60vh;
+    width: 30vw;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10%;
+    border-radius: $round;
+    border: 3px solid $black-color;
+        &__title{
+            font: 3vh $font-main;
+            font-weight:bold;
+            color: $black-color;
+            text-align: center;
+            margin-top: 4%;
+            margin-bottom: 8%;
+        }
+        
+        &__contacts{
+            font: 3vh $font-main;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 10px;
+        }
+        &__wraper{
+            display: flex;
+            justify-content: center;
+        }
+        &__button{
+            background: $grey-color;
+            border-radius: $round;
+            padding: 2px 3px;
+            color: $black-color;
+            font: 4vh $font-main;
+            border: none;
+            cursor: pointer;
+        }
+}
+
+input[type="text"]{
+    font: 3vh $font-main;
+    height: 5vh;
+    color: $primary-color;
+}
+
+.form-on{
+    display: block;
+}
+
+
+
 .palette {
     display: flex;
     justify-content: end;
@@ -71,6 +126,7 @@ a:link, a:visited,a:focus,a:hover {
 
 .banner {
     background-image: url('../../res/Back.png');
+    z-index: 1;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     height: 100vh;
@@ -116,6 +172,7 @@ a:link, a:visited,a:focus,a:hover {
 
 .projects{
     height: 100vh;
+    z-index: 1;
     &__galery{
         float:left;
         height: 100vh; 
@@ -158,6 +215,7 @@ a:link, a:visited,a:focus,a:hover {
             margin-bottom: 4vh;
             margin-left: 50%;
             transform: translate(-50%);
+            object-fit: cover;
         }
 
         &__reviews{
@@ -167,6 +225,7 @@ a:link, a:visited,a:focus,a:hover {
             margin-left: 4vw;
             margin-top: 3vh;
             margin-bottom: 2vh;
+            object-fit: cover;
         }
 
         &__text{
@@ -185,6 +244,7 @@ a:link, a:visited,a:focus,a:hover {
 
 .sales{
     height: 100vh;
+    z-index: 1;
     background-color: $grey-back;
      &__title{
         font: 6vh $font-details;
@@ -210,6 +270,7 @@ a:link, a:visited,a:focus,a:hover {
                 width: 100%;
                 height: 90%;
                 border-radius: $round $round 0 0;
+                object-fit: cover;
             }
 
             &__title{
@@ -243,6 +304,7 @@ a:link, a:visited,a:focus,a:hover {
 }
 
 .mini-banner{
+    z-index: 1;
     background-image: url('../../res/back1.png');
     background-repeat: no-repeat;
     background-size: 100vw 20vh;
@@ -253,6 +315,7 @@ a:link, a:visited,a:focus,a:hover {
 
 .company{
     height: 100vh;
+    z-index: 1;
     &__title{
         font:5vh $font-details;
         margin-left: 5em;
@@ -273,6 +336,7 @@ a:link, a:visited,a:focus,a:hover {
             &__photo{
                 height:20vh;
                 width:auto;
+                object-fit: cover;
             }
 
             &__text{
@@ -307,6 +371,7 @@ a:link, a:visited,a:focus,a:hover {
         &__logo{
             height: auto;
             width: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -319,6 +384,7 @@ a:link, a:visited,a:focus,a:hover {
     display: flex;
     justify-content: center;
     column-gap: 5%;
+    z-index: 1;
 
     &__info{
         font: 2vh $font-main;
@@ -351,3 +417,4 @@ a:link, a:visited,a:focus,a:hover {
     }
 
 }
+
