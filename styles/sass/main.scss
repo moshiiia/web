@@ -35,23 +35,22 @@ a:link, a:visited,a:focus,a:hover {
     position: fixed;
     background-color: $primary-color;
     width: 100vw;
-    height: 36px;
+    height: 2vw;
 
     &__logo {
         display: inline;
         position: absolute;
-        margin-left: 10px;
+        margin-left: 1vw;
         margin-top: 5px;
-        height: 70%;
+        height:1.5vw;
     }
 
     &__button {
         background: $primary-color;
-        margin-right: 5%;
-        padding: 7px;
-        font-size: 22px;
+        margin-right: 2vw;
         color: $white-color;
-        font: 100% $font-main;
+        padding: 0.25vw;
+        font: 1vw $font-main;
         border: none;
 
         &:hover {
@@ -69,15 +68,21 @@ a:link, a:visited,a:focus,a:hover {
     z-index: 100;
     position: fixed;
     background-color: $white-color;
-    height: 60vh;
-    width: 30vw;
+    height: 65vh;
+    width: 27vw;
     margin-left: 50%;
     transform: translate(-50%);
     margin-top: 10%;
     border-radius: $round;
     border: 3px solid $black-color;
+        &__text{
+            font: 1vw $font-main;
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom: 2%;
+        }
         &__title{
-            font: 3vh $font-main;
+            font: 4vh $font-main;
             font-weight:bold;
             color: $black-color;
             text-align: center;
@@ -86,7 +91,7 @@ a:link, a:visited,a:focus,a:hover {
         }
         
         &__contacts{
-            font: 3vh $font-main;
+            font: 1vw $font-main;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -101,7 +106,7 @@ a:link, a:visited,a:focus,a:hover {
             border-radius: $round;
             padding: 2px 3px;
             color: $black-color;
-            font: 4vh $font-main;
+            font: 1.5vw $font-main;
             border: none;
             cursor: pointer;
         }
@@ -186,26 +191,43 @@ input[type="text"]{
         width: 50%;
         background-color: $white-color;
         
-        &__name{
+        &__title{
             font: 4vh $font-details;
             text-align: center;
             margin-top: 10vh;
         }
 
-        &__photo {
-        float: left;
-        width: 25%;
+        &__item{
+            display: grid;
+            grid: 100%/ 20% 60%;
+            justify-content: left;
+            column-gap: 2%;
+            margin-left: 2%;
+            margin-top: 2%;
+            &__photo{
+                height:6vw;
+                border-radius: $round;
+                width:auto;
+                object-fit: cover;
+            }
+
+            &__text{
+                font: 0.75vw $font-details;
+                &__data{
+                    font: 1vw $font-main;
+                    font-weight: bolder;
+                    word-spacing: 20em;
+                }
+            }
         }
-                                            
-        &__text{
-        float:right;
-        width:70%;
-        }
+      
     }
 
     .row-palette{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        object-fit: cover;
         margin-top: 12vh;
 
         &__element{
@@ -216,29 +238,9 @@ input[type="text"]{
             margin-left: 50%;
             transform: translate(-50%);
             object-fit: cover;
+
         }
 
-        &__reviews{
-            height:15vh;
-            width: auto;
-            border-radius: $round;
-            margin-left: 4vw;
-            margin-top: 3vh;
-            margin-bottom: 2vh;
-            object-fit: cover;
-        }
-
-        &__text{
-            font: 2vh $font-details;
-            padding-bottom: 1vh;
-            padding-top: 2vh;
-
-            &__data{
-                word-spacing: 20em;
-                font: 2vh $font-main;
-                font-weight: bold;
-            }
-        }
     }
 }
 
@@ -274,13 +276,13 @@ input[type="text"]{
             }
 
             &__title{
-                font: 4vh $font-details;
+                font: 1.5vw $font-details;
                 text-align: left;
                 margin-left: 5%;
             }
 
             &__text{
-                font: 2vh  $font-details;
+                font: 1vw  $font-details;
                 text-align: left;
                 margin-left: 5%;
             }
@@ -291,7 +293,7 @@ input[type="text"]{
                 width: 100%;
                 border-radius: 0 0 $round $round;
                 &__text{    
-                    font: 4vh $font-main;
+                    font: 1.5vw  $font-main;
                     color: $white-color;
                     text-align: center;
                     margin-top: 5%;            
@@ -317,7 +319,7 @@ input[type="text"]{
     height: 100vh;
     z-index: 1;
     &__title{
-        font:5vh $font-details;
+        font:3vw $font-details;
         margin-left: 5em;
         margin-bottom: 0.5em;
         margin-top: 2em;
@@ -334,7 +336,7 @@ input[type="text"]{
             margin-bottom: 5%;
 
             &__photo{
-                height:20vh;
+                height:8vw;
                 width:auto;
                 object-fit: cover;
             }
@@ -342,9 +344,9 @@ input[type="text"]{
             &__text{
                 margin-left: 1em;
                 margin-top: 1.2em;
-                font: 2vh $font-details;
+                font: 0.8vw $font-details;
                 &__title{
-                    font: 120% $font-details;
+                    font: 1vw $font-details;
                 }
             }
         }
@@ -364,8 +366,8 @@ input[type="text"]{
             border: solid 3px $primary-color;
             background-color: $primary-color-bg;
             border-radius: $round;
-            font: 2vh $font-details;
-            width: 50%;
+            font: 1vw $font-details;
+            width: 20vw;
         }
 
         &__logo{
@@ -379,7 +381,7 @@ input[type="text"]{
 .footer{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    height: 15vh;
+    height: 6vw;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
@@ -387,7 +389,7 @@ input[type="text"]{
     z-index: 1;
 
     &__info{
-        font: 2vh $font-main;
+        font: 1vw $font-main;
         color: $white-color;
         line-height: 1.5em;
         text-shadow: 1px 1px 1px #000;
@@ -395,20 +397,21 @@ input[type="text"]{
 
     &__media{
         &__title{
-        font: 3vh $font-main;
+        font: 1vw $font-main;
         color: $white-color;
         text-shadow: 1px 1px 1px #000;
         }
 
         &__grid{
             display: grid;
-            grid: 100%/ 25% 25% 25% 25%;
+            grid: 100%/ 20% 20% 20% 20%;
+            column-gap: 3%;
             justify-content: center;
             margin-left: 1em;
             margin-top: 0.5em;
 
             &__element{
-                height: 9vh;
+                height: 3vw;
                 width: auto;
                 cursor: pointer;
             }

@@ -18,20 +18,19 @@ a:link, a:visited, a:focus, a:hover {
   position: fixed;
   background-color: #515e42;
   width: 100vw;
-  height: 36px; }
+  height: 2vw; }
   .header__logo {
     display: inline;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 1vw;
     margin-top: 5px;
-    height: 70%; }
+    height: 1.5vw; }
   .header__button {
     background: #515e42;
-    margin-right: 5%;
-    padding: 7px;
-    font-size: 22px;
+    margin-right: 2vw;
     color: white;
-    font: 100% "Noto Serif";
+    padding: 0.25vw;
+    font: 1vw "Noto Serif";
     border: none; }
     .header__button:hover {
       background-color: #dee2df;
@@ -44,22 +43,27 @@ a:link, a:visited, a:focus, a:hover {
   z-index: 100;
   position: fixed;
   background-color: white;
-  height: 60vh;
-  width: 30vw;
+  height: 65vh;
+  width: 27vw;
   margin-left: 50%;
   transform: translate(-50%);
   margin-top: 10%;
   border-radius: 9px;
   border: 3px solid #1e1e1e; }
+  .buying-form__text {
+    font: 1vw "Noto Serif";
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 2%; }
   .buying-form__title {
-    font: 3vh "Noto Serif";
+    font: 4vh "Noto Serif";
     font-weight: bold;
     color: #1e1e1e;
     text-align: center;
     margin-top: 4%;
     margin-bottom: 8%; }
   .buying-form__contacts {
-    font: 3vh "Noto Serif";
+    font: 1vw "Noto Serif";
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +76,7 @@ a:link, a:visited, a:focus, a:hover {
     border-radius: 9px;
     padding: 2px 3px;
     color: #1e1e1e;
-    font: 4vh "Noto Serif";
+    font: 1.5vw "Noto Serif";
     border: none;
     cursor: pointer; }
 
@@ -140,19 +144,33 @@ input[type="text"] {
     float: right;
     width: 50%;
     background-color: white; }
-    .projects__about__name {
+    .projects__about__title {
       font: 4vh "Roboto Slab";
       text-align: center;
       margin-top: 10vh; }
-    .projects__about__photo {
-      float: left;
-      width: 25%; }
-    .projects__about__text {
-      float: right;
-      width: 70%; }
+    .projects__about__item {
+      display: grid;
+      grid: 100%/ 20% 60%;
+      justify-content: left;
+      column-gap: 2%;
+      margin-left: 2%;
+      margin-top: 2%; }
+      .projects__about__item__photo {
+        height: 6vw;
+        border-radius: 9px;
+        width: auto;
+        object-fit: cover; }
+      .projects__about__item__text {
+        font: 0.75vw "Roboto Slab"; }
+        .projects__about__item__text__data {
+          font: 1vw "Noto Serif";
+          font-weight: bolder;
+          word-spacing: 20em; }
   .projects .row-palette {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    object-fit: cover;
     margin-top: 12vh; }
     .projects .row-palette__element {
       height: 22vh;
@@ -162,22 +180,6 @@ input[type="text"] {
       margin-left: 50%;
       transform: translate(-50%);
       object-fit: cover; }
-    .projects .row-palette__reviews {
-      height: 15vh;
-      width: auto;
-      border-radius: 9px;
-      margin-left: 4vw;
-      margin-top: 3vh;
-      margin-bottom: 2vh;
-      object-fit: cover; }
-    .projects .row-palette__text {
-      font: 2vh "Roboto Slab";
-      padding-bottom: 1vh;
-      padding-top: 2vh; }
-      .projects .row-palette__text__data {
-        word-spacing: 20em;
-        font: 2vh "Noto Serif";
-        font-weight: bold; }
 
 .sales {
   height: 100vh;
@@ -205,11 +207,11 @@ input[type="text"] {
         border-radius: 9px 9px 0 0;
         object-fit: cover; }
       .sales__cards__item__title {
-        font: 4vh "Roboto Slab";
+        font: 1.5vw "Roboto Slab";
         text-align: left;
         margin-left: 5%; }
       .sales__cards__item__text {
-        font: 2vh "Roboto Slab";
+        font: 1vw "Roboto Slab";
         text-align: left;
         margin-left: 5%; }
       .sales__cards__item__price {
@@ -218,7 +220,7 @@ input[type="text"] {
         width: 100%;
         border-radius: 0 0 9px 9px; }
         .sales__cards__item__price__text {
-          font: 4vh "Noto Serif";
+          font: 1.5vw "Noto Serif";
           color: white;
           text-align: center;
           margin-top: 5%;
@@ -236,7 +238,7 @@ input[type="text"] {
   height: 100vh;
   z-index: 1; }
   .company__title {
-    font: 5vh "Roboto Slab";
+    font: 3vw "Roboto Slab";
     margin-left: 5em;
     margin-bottom: 0.5em;
     margin-top: 2em; }
@@ -250,15 +252,15 @@ input[type="text"] {
       column-gap: 5%;
       margin-bottom: 5%; }
       .company__reviews__item__photo {
-        height: 20vh;
+        height: 8vw;
         width: auto;
         object-fit: cover; }
       .company__reviews__item__text {
         margin-left: 1em;
         margin-top: 1.2em;
-        font: 2vh "Roboto Slab"; }
+        font: 0.8vw "Roboto Slab"; }
         .company__reviews__item__text__title {
-          font: 120% "Roboto Slab"; }
+          font: 1vw "Roboto Slab"; }
   .company__about {
     float: right;
     width: 50%; }
@@ -270,8 +272,8 @@ input[type="text"] {
       border: solid 3px #515e42;
       background-color: #dee3df;
       border-radius: 9px;
-      font: 2vh "Roboto Slab";
-      width: 50%; }
+      font: 1vw "Roboto Slab";
+      width: 20vw; }
     .company__about__logo {
       height: auto;
       width: 100%;
@@ -280,28 +282,29 @@ input[type="text"] {
 .footer {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  height: 15vh;
+  height: 6vw;
   background-color: #515e42;
   display: flex;
   justify-content: center;
   column-gap: 5%;
   z-index: 1; }
   .footer__info {
-    font: 2vh "Noto Serif";
+    font: 1vw "Noto Serif";
     color: white;
     line-height: 1.5em;
     text-shadow: 1px 1px 1px #000; }
   .footer__media__title {
-    font: 3vh "Noto Serif";
+    font: 1vw "Noto Serif";
     color: white;
     text-shadow: 1px 1px 1px #000; }
   .footer__media__grid {
     display: grid;
-    grid: 100%/ 25% 25% 25% 25%;
+    grid: 100%/ 20% 20% 20% 20%;
+    column-gap: 3%;
     justify-content: center;
     margin-left: 1em;
     margin-top: 0.5em; }
     .footer__media__grid__element {
-      height: 9vh;
+      height: 3vw;
       width: auto;
       cursor: pointer; }
